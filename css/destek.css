@@ -1,0 +1,141 @@
+/* ======================================
+   HERMES DESTEK & YARDIM MERKEZİ STİLLERİ
+====================================== */
+
+.support-body-white {
+    background-color: #ffffff !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.support-container {
+    flex: 1 !important;
+}
+
+/* Arama Alanı Arka Planı */
+.support-hero-search {
+    background-color: #f8fafc !important; /* Soft gri-beyaz geçiş */
+}
+
+/* Midas Tipi Geniş Arama Çubuğu */
+.search-box-wrapper {
+    max-width: 540px !important;
+    width: 100% !important;
+}
+
+.search-input {
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 50px !important; /* Kapsül şeklinde modern çubuk */
+    padding: 14px 24px !important;
+    font-size: 0.95rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.search-input:focus {
+    border-color: #5563ff !important;
+    box-shadow: 0 0 0 4px rgba(85, 99, 255, 0.1) !important;
+}
+
+/* ======================================
+   KATEGORİ KARTLARI TASARIMI
+====================================== */
+.support-category-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+    height: 100% !important;
+}
+
+.support-category-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Fotoğraf Gelecek Daire Kutular */
+.support-card-img-box {
+    width: 64px !important;
+    height: 64px !important;
+    background-color: #f1f5f9 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+/* Eğer fotoğraf henüz yüklenmediyse görünecek büyük emojiler */
+.fallback-icon {
+    font-size: 1.6rem !important;
+}
+
+/* ======================================
+   SSS AKORDEON (ACCORDION) ÖZELLEŞTİRMELERİ
+====================================== */
+.support-custom-accordion {
+    background: #ffffff !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.support-custom-accordion .accordion-button {
+    padding: 20px 24px !important;
+    background-color: #ffffff !important;
+    font-size: 0.95rem !important;
+}
+
+.support-custom-accordion .accordion-button:not(.collapsed) {
+    color: #5563ff !important; /* Açıldığında yazı mavi olur */
+    box-shadow: none !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.support-custom-accordion .accordion-body {
+    padding: 20px 24px !important;
+    background-color: #fafafa !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+}
+
+/* ======================================
+   WHITE FOOTER UYUMU
+====================================== */
+.market-white-footer {
+    background: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+.market-white-footer .footer-container .footer-column h4 {
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+.market-white-footer .footer-container .footer-column a {
+    color: #475569 !important;
+}
+
+.market-white-footer .footer-container .footer-column a:hover {
+    color: #5563ff !important;
+}
+
+.market-white-footer .footer-container .footer-column p {
+    color: #475569 !important;
+}
+
+.market-white-footer .footer-bottom {
+    border-top: 1px solid #f1f5f9 !important;
+    color: #64748b !important;
+}
+
+.site-footer {
+    display: block !important;
+    clear: both !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-top: auto !important;
+}

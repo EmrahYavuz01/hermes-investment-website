@@ -1,0 +1,208 @@
+/* ======================================
+   HERMES CANLI BORSA - LIGHT DASHBOARD
+====================================== */
+
+/* Zemin rengini net beyaza çekiyoruz */
+.market-body-white {
+    background-color: #f8fafc !important; /* Soft, göz yormayan elit beyaz */
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.market-container {
+    flex: 1 !important;
+}
+
+.market-main-title {
+    font-size: 2.2rem !important;
+    letter-spacing: -1px !important;
+}
+
+/* ======================================
+   ÜST ENDEKS KARTLARI (TICKER CARDS)
+====================================== */
+.market-ticker-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    text-align: left !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.market-ticker-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05) !important;
+    border-color: #cbd5e1 !important;
+}
+
+.ticker-name {
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    display: block !important;
+    margin-bottom: 8px !important;
+}
+
+.ticker-values {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.ticker-price {
+    color: #0f172a !important; /* Koyu antrasit */
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px !important;
+    transition: color 0.3s ease !important;
+}
+
+.ticker-change {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+}
+
+/* ======================================
+   HİSSE TABLO KARTLARI
+====================================== */
+.market-table-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+}
+
+.table-card-title {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.title-dot {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+
+/* Tablo Kuralları */
+.market-custom-table {
+    margin-bottom: 0 !important;
+    background: transparent !important;
+}
+
+.market-custom-table th {
+    background: transparent !important;
+    color: #64748b !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 12px 8px !important;
+}
+
+.market-custom-table td {
+    background: transparent !important;
+    color: #0f172a !important;
+    font-size: 0.95rem !important;
+    border-bottom: 1px solid #f8fafc !important;
+    padding: 16px 8px !important;
+    vertical-align: middle !important;
+    transition: color 0.3s ease !important;
+}
+
+.market-custom-table td small {
+    display: block !important;
+    font-size: 0.75rem !important;
+    color: #94a3b8 !important;
+    margin-top: 2px !important;
+}
+
+.market-custom-table tbody tr {
+    transition: background-color 0.2s ease !important;
+}
+
+.market-custom-table tbody tr:hover {
+    background-color: #f8fafc !important;
+}
+
+/* ======================================
+   CANLI ANLIK YANIP SÖNME (BLINK) EFEKTLERİ
+====================================== */
+.blink-up {
+    color: #10b981 !important; /* Yeşil */
+    font-weight: 800 !important;
+}
+
+.blink-down {
+    color: #ef4444 !important; /* Kırmızı */
+    font-weight: 800 !important;
+}
+
+/* Renk Renk Standartları */
+.text-success { color: #10b981 !important; }
+.text-danger { color: #ef4444 !important; }
+
+/* Orijinal Footer Stabilizasyonu */
+.site-footer {
+    display: block !important;
+    clear: both !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-top: auto !important;
+}
+
+/* ======================================
+   YENİ: BEYAZ FOOTER KESİN EZİCİ KURALLAR
+====================================== */
+footer.site-footer.crypto-footer.market-white-footer {
+    background: #ffffff !important; /* Arka planı kesinlikle beyaz yap */
+    background-color: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+/* Footer içindeki sütunların arka planlarını da şeffaf yapalım ki koyuluk sızmasın */
+.market-white-footer .footer-container, 
+.market-white-footer .footer-column {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Başlıkları antrasit yap */
+.market-white-footer .footer-container .footer-column h4 {
+    color: #0f172a !important; 
+    font-weight: 600 !important;
+}
+
+/* Linkleri koyu gri yap */
+.market-white-footer .footer-container .footer-column a {
+    color: #475569 !important; 
+}
+
+.market-white-footer .footer-container .footer-column a:hover {
+    color: #5563ff !important; /* Üzerine gelince Hermes mavisi */
+}
+
+/* Açıklama yazılarını koyu gri yap */
+.market-white-footer .footer-container .footer-column p {
+    color: #475569 !important;
+}
+
+/* En alttaki telif hakkı şeridi */
+.market-white-footer .footer-bottom {
+    background: #ffffff !important;
+    border-top: 1px solid #f1f5f9 !important;
+    color: #64748b !important;
+}
+
+.market-white-footer .footer-bottom p {
+    color: #64748b !important;
+}

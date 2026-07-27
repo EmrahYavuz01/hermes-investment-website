@@ -1,0 +1,148 @@
+/* ======================================
+   HERMES KUR DÖNÜŞTÜRÜCÜ - LIGHT STYLES
+====================================== */
+
+.converter-body-white {
+    background-color: #f8fafc !important; 
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.converter-container {
+    flex: 1 !important;
+}
+
+.converter-main-title {
+    font-size: 2.4rem !important;
+    letter-spacing: -1.2px !important;
+}
+
+.converter-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 24px !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03) !important;
+}
+
+.converter-input, .converter-select {
+    border: 1px solid #cbd5e1 !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+    border-radius: 12px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.converter-input:focus, .converter-select:focus {
+    border-color: #5563ff !important;
+    box-shadow: 0 0 0 4px rgba(85, 99, 255, 0.1) !important;
+}
+
+.converter-divider-icon {
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    background: #f1f5f9 !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #64748b !important;
+    border-radius: 50% !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    user-select: none !important;
+}
+
+.converter-result-box {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    padding: 7px 16px !important;
+    border-radius: 12px !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    letter-spacing: -0.5px !important;
+}
+
+.converter-table-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01) !important;
+}
+
+.converter-table-card .table-card-title {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.converter-table-card .title-dot {
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #5563ff !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+
+.converter-custom-table {
+    margin-bottom: 0 !important;
+}
+
+.converter-custom-table th {
+    color: #64748b !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 14px 10px !important;
+}
+
+.converter-custom-table td {
+    color: #0f172a !important;
+    font-size: 0.95rem !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 16px 10px !important;
+    vertical-align: middle !important;
+}
+
+.market-white-footer {
+    background: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+.market-white-footer .footer-container .footer-column h4 {
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+.market-white-footer .footer-container .footer-column a {
+    color: #475569 !important;
+}
+
+.market-white-footer .footer-container .footer-column a:hover {
+    color: #5563ff !important;
+}
+
+.market-white-footer .footer-container .footer-column p {
+    color: #475569 !important;
+}
+
+.market-white-footer .footer-bottom {
+    border-top: 1px solid #f1f5f9 !important;
+    color: #64748b !important;
+}
+
+.site-footer {
+    display: block !important;
+    clear: both !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-top: auto !important;
+}
