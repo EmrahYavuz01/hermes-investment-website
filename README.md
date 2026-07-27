@@ -36,7 +36,9 @@ The project includes investment-related pages such as stock markets, cryptocurre
 
 ## 🌐 Live Demo
 
-🔗 https://emrahyavuz01.github.io/hermes-investment-website/
+**Live Website:**
+
+https://emrahyavuz01.github.io/hermes-investment-website/
 
 ...
 
