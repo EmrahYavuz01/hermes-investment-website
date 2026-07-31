@@ -1,0 +1,525 @@
+/* =====================================================
+   INDEX - MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+    /* HERO */
+
+    .hero-section{
+        padding-top:20px;
+    }
+
+    .hero-image{
+        width:100%;
+        max-width:340px;
+        margin:30px auto 0;
+    }
+
+    /* FEATURE */
+
+    .feature-section{
+        padding:32px 16px;
+    }
+
+    .feature-section + .feature-section{
+        margin-top:0;
+        padding-top:16px;
+    }
+
+    .feature-row{
+        flex-direction:column;
+        justify-content:center;
+        gap:20px;
+        padding:24px 18px;
+        border-radius:24px;
+        text-align:center;
+    }
+
+    .image-right,
+    .image-left{
+        justify-content:center;
+        padding-left:0;
+    }
+
+    .feature-image-area{
+        width:100%;
+        order:1;
+    }
+
+    .feature-text-area{
+        width:100%;
+        order:2;
+    }
+
+    .feature-bg{
+        width:180px;
+    }
+
+    .feature-text-area h2{
+        font-size:28px;
+        margin-bottom:12px;
+    }
+
+    .feature-text-area p{
+        max-width:100%;
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    /* HERMES PRO */
+
+    .pro-section{
+        padding:40px 18px;
+    }
+
+    .feature-card{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        min-height:auto;
+        padding:28px 20px;
+        border-radius:24px;
+        text-align:center;
+    }
+
+    .logo-box{
+        width:140px;
+        justify-content:center;
+    }
+
+    .content{
+        max-width:100%;
+    }
+
+    .content h1{
+        font-size:26px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+
+    /* FOOTER */
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .footer-column{
+        border-right:none;
+        border-bottom:1px solid #e5e7eb;
+        padding:0 10px 24px;
+    }
+
+    .footer-column:last-child{
+        border-bottom:none;
+    }
+
+    .footer-logo{
+        width:95px;
+        margin-bottom:18px;
+    }
+
+    .footer-bottom{
+        padding:24px 16px;
+        font-size:13px;
+    }
+
+    /* NAVBAR */
+
+    .navbar-brand{
+        left:0;
+        margin-right:0;
+    }
+
+    .navbar-logo{
+        width:44px;
+    }
+
+    /* SAFETY NET: prevent a single long word in a large
+       heading from forcing horizontal overflow on narrow
+       phones. No effect on headings that already fit. */
+    h1, h2, h3, h4{
+        overflow-wrap:break-word;
+        word-break:break-word;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .benefits-title{
+        font-size:28px;
+    }
+
+    .register-left-box h1{
+        font-size:30px;
+    }
+
+}
+
+/* =====================================================
+   ABD BORSALARI - MOBILE
+   (stocks-grid used a fixed 4x220px grid with no mobile
+   fallback, causing horizontal overflow below ~960px)
+===================================================== */
+
+@media (max-width:991.98px){
+
+    .stocks-grid{
+        grid-template-columns:repeat(2, minmax(0,220px));
+        justify-content:center;
+    }
+
+}
+
+@media (max-width:575.98px){
+
+    .stocks-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .stock-card{
+        width:100%;
+        max-width:320px;
+        margin:0 auto;
+    }
+
+}
+
+/* =====================================================
+   GİRİŞ / KAYIT OL - MOBILE
+   (register-features was a flex row of 3 text boxes with
+   no min-width:0 fallback, forcing horizontal overflow)
+===================================================== */
+
+@media (max-width:576px){
+
+    .register-features{
+        flex-direction:column;
+    }
+
+    .feature-mini-box{
+        min-height:auto;
+    }
+
+}
+
+/* =====================================================
+   KRİPTO - MOBILE
+   (crypto-market-grid was a fixed 4-column grid with no
+   mobile fallback, causing horizontal overflow)
+===================================================== */
+
+@media (max-width:767.98px){
+
+    .crypto-market-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        max-width:420px;
+    }
+
+}
+
+@media (max-width:375.98px){
+
+    .crypto-market-grid{
+        grid-template-columns:minmax(0,1fr);
+        max-width:260px;
+    }
+
+}
+
+/* =====================================================
+   OPSİYON - MOBILE
+   (benefits-grid was a fixed 4-column grid with 35px
+   card padding, causing severe horizontal overflow)
+===================================================== */
+
+@media (max-width:991.98px){
+
+    .benefits-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+    }
+
+}
+
+@media (max-width:575.98px){
+
+    .benefits-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .benefit-card{
+        padding:24px;
+    }
+
+}
+
+@media (max-width:991.98px){
+
+    .strategy-card{
+        grid-template-columns:minmax(0,1fr);
+        gap:30px;
+        padding:32px;
+        text-align:center;
+    }
+
+    .strategy-left p{
+        max-width:100%;
+        margin:0 auto;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .strategy-left h2{
+        font-size:32px;
+    }
+
+    .strategy-left p{
+        font-size:17px;
+    }
+
+    .option-title{
+        font-size:34px;
+    }
+
+    .option-cta-box{
+        padding:36px 24px;
+    }
+
+    .option-cta-box h2{
+        font-size:28px;
+    }
+
+}
+
+/* =====================================================
+   ÜCRETLER - MOBILE
+   (pricing-title at 64px could exceed viewport width on
+   very small phones since long words can't break)
+===================================================== */
+
+@media (max-width:480px){
+
+    .pricing-title{
+        font-size:36px;
+    }
+
+}
+
+/* =====================================================
+   BORSA İSTANBUL - MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+    .bist-hero{
+        padding:35px 0 0;
+        text-align:center;
+    }
+
+    .bist-title{
+        font-size:34px;
+        line-height:1.2;
+        margin-bottom:18px;
+    }
+
+    .bist-text{
+        font-size:16px;
+        line-height:1.7;
+        padding:0 18px;
+    }
+
+    .hero-phone{
+        max-width:340px;
+        margin:35px auto -30px;
+    }
+
+    .bist-features{
+        margin:45px auto;
+        padding:0 16px;
+        gap:22px;
+    }
+
+    .bist-feature-card,
+    .bist-feature-card.reverse{
+        flex-direction:column;
+        text-align:center;
+        padding:28px 22px;
+        gap:24px;
+        min-height:0;
+    }
+
+    .feature-text{
+        width:100%;
+        flex:none;
+        order:2;
+    }
+
+    .feature-image{
+        width:100%;
+        flex:none;
+        order:1;
+        justify-content:center;
+    }
+
+    .feature-text h3{
+        font-size:26px;
+        line-height:1.3;
+        margin-bottom:14px;
+    }
+
+    .feature-text p{
+        font-size:16px;
+        line-height:1.7;
+        max-width:100%;
+    }
+
+    .feature-image img{
+        max-width:240px;
+        transform:none !important;
+    }
+
+    .bist-feature-card:nth-child(4) .feature-image img,
+    .bist-feature-card:nth-child(5) .feature-image img{
+        max-width:240px;
+        transform:none !important;
+    }
+
+}
+/* =====================================================
+   KRİPTO SAYFASI - "PREMIUM KART" GRID BÖLÜMÜ (MOBILE)
+   Bu 3 kart orijinal CSS'te %70 genişlik + iki sütun
+   (%55/%40) + 100px yatay padding gibi tamamen sabit
+   masaüstü değerleriyle yazılmıştı, mobil karşılığı hiç
+   yoktu. Dar ekranda yazı sütunu neredeyse sıfır genişliğe
+   düşüp harf harf alt alta diziliyordu. Bu blok kartları
+   dikey sıraya alır; renk/gölge/radius aynı kalır.
+===================================================== */
+
+@media (max-width:768px){
+
+    html body .crypto-grid-section .crypto-premium-card,
+    html body .crypto-grid-section .crypto-premium-card-2,
+    html body .crypto-grid-section .crypto-premium-card-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        flex-direction: column !important;
+        padding: 32px 24px !important;
+        gap: 28px !important;
+    }
+
+    html body .crypto-grid-section .crypto-premium-card .card-left-text,
+    html body .crypto-grid-section .crypto-premium-card-3 .card-left-text,
+    .crypto-premium-card-2 .card-right-text {
+        width: 100% !important;
+        transform: none !important;
+        padding-bottom: 0 !important;
+    }
+
+    html body .crypto-grid-section .crypto-premium-card .card-right-image,
+    html body .crypto-grid-section .crypto-premium-card-3 .card-right-image,
+    .crypto-premium-card-2 .card-left-image {
+        width: 100% !important;
+        height: auto !important;
+        justify-content: center !important;
+    }
+
+    .crypto-premium-card .grid-phone-img,
+    .crypto-premium-card-2 .grid-phone-img,
+    .crypto-premium-card-3 .grid-phone-img {
+        max-height: 260px !important;
+        transform: none !important;
+    }
+
+    html body .crypto-grid-section .crypto-premium-card .grid-card-title,
+    html body .crypto-grid-section .crypto-premium-card-3 .grid-card-title,
+    .crypto-premium-card-2 .grid-card-title {
+        font-size: 24px !important;
+    }
+
+    html body .crypto-hero-section .crypto-hero-image-wrap {
+        margin-top: 24px !important;
+    }
+}
+
+/* =====================================================
+   ABD BORSALARI - AVANTAJLAR KUTUSU (MOBILE)
+   .benefits-phone negatif margin (-58px alt, -50px sol)
+   masaüstünde iki sütun yan yanayken doğru çalışıyordu;
+   sütunlar mobilde alt alta dizilince bu negatif margin
+   görseli bir sonraki elemanın (başlık) üzerine çekip
+   yazıyla çakışmasına sebep oluyordu.
+===================================================== */
+
+@media (max-width:991.98px){
+
+    .benefits-phone{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 24px !important;
+    }
+
+    .phone-column{
+        text-align: center;
+    }
+}
+
+/* =====================================================
+   YATIRIM FONLARI - "FON KARTLARI" BÖLÜMÜ (MOBILE)
+   Bu 3 kart da (kripto kartlarıyla aynı mantıkta) sabit
+   %/px genişlik + iki sütun yan yana + negatif transform
+   kaydırmalarla yazılmıştı, mobil karşılığı yoktu. Bu blok
+   kartları dikey sıraya alır.
+===================================================== */
+
+@media (max-width:768px){
+
+    html body .funds-second-section .funds-flex-column {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 20px auto 40px auto !important;
+        gap: 24px !important;
+    }
+
+    html body .funds-second-section .funds-row-card,
+    html body .funds-second-section .funds-row-card-single {
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 32px 24px !important;
+    }
+
+    html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    html body .funds-second-section .funds-text-side,
+    html body .funds-second-section .funds-row-card-single .funds-text-side {
+        width: 100% !important;
+        padding-bottom: 0 !important;
+    }
+
+    html body .funds-second-section .funds-image-side,
+    html body .funds-second-section .funds-row-card-single .funds-image-side {
+        width: 100% !important;
+    }
+
+    html body .funds-second-section .card-phone-img,
+    html body .funds-second-section .funds-row-card-single .card-phone-img {
+        max-height: 260px !important;
+        transform: none !important;
+    }
+
+    html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(2) .funds-image-side img {
+        transform: none !important;
+    }
+}

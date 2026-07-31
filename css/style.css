@@ -55,7 +55,7 @@ html body .crypto-hero-section .crypto-hero-main-img {
     height: auto !important;
     display: block !important;
     margin: 0 auto !important;
-    vertical-align: bottom !important; /* Gece mavisi arka planın tam burada kesilmesini sağlar */
+   
 }
 
 
@@ -68,7 +68,7 @@ html body .crypto-hero-section .crypto-hero-main-img {
 /* Yeni grid bölümünün genel alanı */
 html body .crypto-grid-section {
     background-color: #020220 !important; 
-    padding: 40px 0 100px 0 !important; /
+    padding: 40px 0 100px 0 !important; 
     width: 100% !important;
     display: block !important;
 }
@@ -727,27 +727,27 @@ html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(2) 
    =================================================== */
 
 /* 3. Kartı (Fon İşlemlerinde Ek Ücret Yok) enine daraltıp dikeyde uzatıyoruz */
-html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(3) {
-    width: 45% !important; 
-    max-width: 580px !important; /* Kartın yayılmasını iyice kısıtladık */
-    padding: 60px 45px 0px 45px !important; /* Telefonun alta sıfırlanması için alt boşluğu sıfır tuttuk */
-    margin: 0 auto !important; /* Küçülen kartı sütunun tam ortasında tutar */
+html body .funds-second-section .funds-row-card-single {
+    width: 55% !important; 
+    max-width: 700px !important;
+    padding: 70px 40px 0px 40px !important;
+    margin: 0 auto !important;
 }
 
 /* Daralan 3. kartın içindeki yazı alanının dengesi */
-html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(3) .funds-text-side {
-    width: 55% !important; 
-    padding-bottom: 50px !important; /* Yazının kartın altına çok yapışmaması için dikey iç boşluk */
+html body .funds-second-section .funds-row-card-single .funds-text-side {
+    width: 52% !important; 
+    padding-bottom: 40px !important;
 }
 
 /* Daralan 3. kartın içindeki görsel alanının dengesi */
-html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(3) .funds-image-side {
-    width: 40% !important;
+html body .funds-second-section .funds-row-card-single .funds-image-side {
+    width: 45% !important;
 }
 
 /* 3. Kartın içindeki telefon görselinin heybetli duruş boyutu */
-html body .funds-second-section .funds-flex-column .funds-row-card:nth-child(3) .card-phone-img {
-    max-height: 340px !important; /* Telefon boyutunu daralan karta göre asil bir ölçüye getirdik */
+html body .funds-second-section .funds-row-card-single .card-phone-img {
+    max-height: 330px !important;
 }
 
 
@@ -1890,20 +1890,8 @@ body{
     height: 145px;
     padding: 14px;
     border-radius: 24px;
-}
-
-
-
-.stock-card{
     background: #f2f4f8;
-    border-radius: 24px;
-    padding: 14px;
-    height: 145px;
     transition: .3s;
-}
-
-.stock-card:hover{
-    transform: translateY(-5px);
 }
 
 .stock-card:hover{
@@ -2058,112 +2046,99 @@ body{
     transform: translateY(-3px);
 }
 
+/* ===================================================
+   BORSA İSTANBUL - KARTLAR
+=================================================== */
+
 .bist-features{
-    max-width:900px;
-    margin:80px auto;
+    max-width:950px;
+    margin:70px auto;
+    padding:0 18px;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
 }
-/* Borsa İstanbul*/
+
 .bist-feature-card{
     background:#f2f4f8;
-    border-radius:24px;
+    border-radius:30px;
+    padding:40px;
+    min-height:450px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    padding:30px;
-    margin-bottom:25px;
+    justify-content:space-between;
+    gap:40px;
+    overflow:hidden;
 }
 
-.feature-text{
-    width:55%;
-}
-
-.feature-text h3{
-    font-size:28px;
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.feature-text p{
-    color:#666;
-    line-height:1.8;
-    font-size:18px;
-}
-
-
-.feature-image{
-    width:60%;
-    text-align:center;
-}
-
-.feature-image img{
-    max-width:100%;
-}
-
-.reverse{
+.bist-feature-card.reverse{
     flex-direction:row-reverse;
 }
 
-/* ===================================================
-   4. KART (ASELSAN) GRİ ALANI KORUMA VE GÖRSELİ DÜZENLEME
-   =================================================== */
-
-/* Gri alanın büyümesini engellemek için padding'i sıfırlayıp flexbox ile ortalıyoruz */
-.bist-features .bist-feature-card:nth-child(4) .feature-image {
-    padding-top: 0 !important; /* Gri alanı büyüten hatalı boşluğu sıfırladık */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 100% !important;
+.feature-text{
+    flex:1;
 }
 
-/* Görseli gri alanı büyütmeden, bağımsız olarak 35 piksel aşağı kaydırıyoruz ve büyütüyoruz */
-.bist-features .bist-feature-card:nth-child(4) .feature-image img {
-    transform: translateY(35px) !important; /* Gri alanı etkilemeden SADECE görseli aşağı kaydırır */
-    max-height: 340px !important;            /* Görselin asil büyüklüğünü korur */
-    width: 100% !important;
+.feature-text h3{
+    font-size:30px;
+    font-weight:700;
+    line-height:1.2;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.feature-text p{
+    font-size:17px;
+    line-height:1.8;
+    color:#6b7280;
+    margin:0;
+}
+
+.feature-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.feature-image img{
+    width:100%;
+    max-width:340px;
+    height:auto;
+    display:block;
+}
+
+
+
+/* 4. Kart - Dikey Hizalama */
+html body .bist-features .bist-feature-card:nth-child(4) {
+    align-items: center !important;
+}
+
+html body .bist-features .bist-feature-card:nth-child(4) .feature-image {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html body .bist-features .bist-feature-card:nth-child(4) .feature-image img {
     max-width: 310px !important;
     height: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
 }
 
-/* ===================================================
-   5. KART (HALKA ARZ) GÖRSELİNİ KÜÇÜLTME VE DENGELEME
-   =================================================== */
+/* 5. Kart */
 
-/* Borsa sayfasındaki 5. kartın görsel alanını flexbox ile tam merkezde hizalıyoruz */
-.bist-features .bist-feature-card:nth-child(5) .feature-image {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 45% !important; /* Görselin kapladığı alanı sağ tarafta dengeli bir orana çeker */
+.bist-feature-card:nth-child(5) .feature-image img{
+    max-width:270px;
 }
 
-/* Görselin kendisini asil bir şekilde %75 oranına küçültüyoruz */
-.bist-features .bist-feature-card:nth-child(5) .feature-image img {
-    max-width: 75% !important;  /* Görselin aşırı büyük kalmasını engeller ve şıkça küçültür */
-    height: auto !important;
-    display: block !important;
-}
 
-/* Sol taraftaki metin alanını da sağ tarafla uyumlu hale getiriyoruz */
-.bist-features .bist-feature-card:nth-child(5) .feature-text {
-    width: 50% !important;
-}
-
-/* ===================================================
-   BORSA İSTANBUL KART ORANLARINI YENİDEN YAPILANDIRMA
-   =================================================== */
-
-/* Tüm kartların yer aldığı ana alanı yatayda daraltıyoruz */
-.bist-features {
-    max-width: 800px !important; /* Eski değer 900px idi, 800px yaparak enlemesine daralttık */
-    margin: 60px auto !important;
-}
-
-/* Kartların kendisini enlemesine daraltıp, boyuna hafifçe genişletiyoruz */
-.bist-feature-card {
-    padding: 45px 35px !important; /* Üst ve alttan 45px yaparak boyuna büyüttük, yanlardan 35px yaptık */
-    border-radius: 32px !important; /* Kartlar daraldığı için köşeleri biraz daha şık ve yumuşak yaptık */
-}
 
 /* ===================================================
    YATIRIM FONLARI HERO VE GÖRSEL HİZALAMA KODLARI
@@ -2281,7 +2256,33 @@ body{
 }
 
 
+/* ===================================================
+   BORSA İSTANBUL - İLK 3 KART GÖRSEL EKSTRA BÜYÜTME
+   =================================================== */
 
+/* 1. Gri Kart Görseli */
+.bist-feature-card:nth-child(1) .feature-image img {
+    max-width: 510px !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: translateY(20px) !important; /* Kart tabanına oturması için */
+}
+
+/* 2. Gri Kart Görseli (Reverse) */
+.bist-feature-card:nth-child(2) .feature-image img {
+    max-width: 510px !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: translateY(20px) !important;
+}
+
+/* 3. Gri Kart Görseli */
+.bist-feature-card:nth-child(3) .feature-image img {
+    max-width: 510px !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: translateY(20px) !important;
+}
 
 
 
