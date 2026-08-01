@@ -523,3 +523,18 @@
         transform: none !important;
     }
 }
+
+/* =====================================================
+   VARANTLAR SAYFASI - "warrant-features-grid" (MOBILE)
+   Grid 2 sabit sütunluydu; .warrant-hero-section'daki
+   overflow:hidden yüzünden kartların taştığı kısım scroll
+   ile bile görünmüyor, direkt kırpılıyordu (sağdaki kart
+   ekran dışında kalıyordu). Tek sütuna düşürüyoruz.
+===================================================== */
+
+@media (max-width:768px){
+
+    .warrant-features-grid{
+        grid-template-columns: 1fr;
+    }
+}
