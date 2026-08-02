@@ -80,14 +80,30 @@ https://emrahyavuz01.github.io/hermes-investment-website/
 Hermes-Investment-Website
 │
 ├── css
+│   ├── style.css
+│   └── responsive.css
+│
 ├── images
 │   └── screenshots
+│
 ├── js
+│
 ├── index.html
+├── borsa-istanbul.html
 ├── abd-borsalari.html
-├── kripto.html
+├── canli-borsa.html
 ├── yatirim-fonlari.html
+├── kripto.html
+├── opsiyon.html
+├── varantlar.html
 ├── hermes-pro.html
+├── kur-donusturucu.html
+├── ucretler.html
+├── destek.html
+├── giris.html
+├── kayit-ol.html
+├── urunler.html
+│
 └── README.md
 ```
 
