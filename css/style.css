@@ -2278,7 +2278,8 @@ html body .bist-features .bist-feature-card:nth-child(4) .feature-image img {
 
 /* 3. Gri Kart Görseli */
 .bist-feature-card:nth-child(3) .feature-image img {
-    max-width: 510px !important;
+    max-width: 510
+    px !important;
     width: 100% !important;
     height: auto !important;
     transform: translateY(20px) !important;
