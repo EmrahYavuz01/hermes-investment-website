@@ -15,12 +15,18 @@ The project includes investment-related pages such as stock markets, cryptocurre
 ## ✨ Features
 
 - Responsive Design
-- Modern UI
+- Modern User Interface
+- Borsa Istanbul
 - US Stock Market
-- Cryptocurrency Market
 - Investment Funds
+- Cryptocurrency Market
+- Options Trading
+- Warrants Trading
+- Live Market
 - Currency Converter
-- Hermes Pro Premium
+- Hermes Pro
+- Pricing
+- Support Center
 - Login & Registration
 
 ---
